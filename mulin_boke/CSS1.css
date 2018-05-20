@@ -1,0 +1,540 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	background-color: #C0C0C0;
+}
+.lable_font2_menu1_font1 li:hover {
+	background-color: #E3E3E3;
+	text-shadow: 1px 0px;
+}
+.lable_font2_menu1_font1 li {
+	width: 90%;
+	border-bottom: 0.5px #D0D0D0 ridge;
+}
+a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 15px;
+}
+#daily_font li:link {
+	color: #4E4E4E;
+}
+#daily_font li:visited {
+	color: #4E4E4E;
+}
+#daily_font li:hover {
+	background-color: #FFBCF6;
+	color: black;
+}
+#daily_font li:active {
+	color: #4E4E4E;
+}
+/*.C_lable_font1:link{
+	color:black;
+}
+.C_lable_font1:visited{
+	color:black;
+}
+.C_lable_font1:hover{
+	color:aliceblue;
+	background-color:#FEBAFC;
+}
+.C_lable_font1:active{
+	color:black;
+}*/
+.C_lable_font1:hover {
+	color: black;
+	background-image: url(imgs/label_font1.png);
+	text-shadow: 0px 0.5px 0px #010101;/*给文字添加阴影效果*/
+}
+.lable_font2_menu1_bg {
+	background-color: aliceblue;
+}
+li {
+	list-style: none;/*去掉无序列表的符号*/
+	border-bottom: 1px dashed #010101;
+	width: 99%;
+	z-index: 7;
+}
+#daily_font li:hover {
+	background-color: #FFBCF6;
+	color: black;
+}
+#bgbody {
+	position: relative;
+	top: auto;
+	margin: 0 auto;
+	width: 1100px;
+	background-color: aliceblue;
+}
+#tital1 {
+	position: absolute;
+	top: auto;
+	left: 25px;
+	width: 1050px;
+	height: 200px;
+	background-color: aquamarine;
+	background-image: url(imgs/tital1.png);
+}
+#bodys {
+	position: absolute;
+	top: 200px;
+	left: 25px;
+	width: 1050px;
+	background-color: aliceblue;
+}
+#label {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1050px;
+	height: 40px;
+	background-color: antiquewhite;
+}
+#label_img1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1050px;
+	height: 40px;
+	background-image: url(imgs/label_img.png);
+}
+.lable_font2_menu1_bg {
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	-ms-filter: blur(10px);
+	filter: blur(0px);
+	opacity: 0.9;
+}
+#label_font {
+	position: absolute;
+	top: 0px;
+	left: 25px;
+	width: 1000px;
+	height: 40px;
+	line-height: 40px;
+}
+#lable_font1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 60px;
+	height: 60px;
+	background-image: url(imgs/label_font1.png);
+	text-shadow: 0px 0.5px 0px #010101;/*给文字添加阴影效果*/
+}
+#lable_font2_menu1 {
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	z-index: 8;
+	width: 500px;
+	height: auto;
+	box-shadow: 0px 0px 1px #010101;
+	/*opacity: 0.5;*/
+	display: none;/*关键：初始化盒子时，设置盒子无行为；解决了下拉菜单在一打开页面时就出现的情况*/
+}
+#lable_font2_menu1_bg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+	width: 500px;
+	height: 205px;
+}
+#lable_font2_menu1_font1 {
+	width: 500px;
+	height: auto;
+	font-family: 楷体;
+	font-size: 18px;
+	color: black;
+	opacity: 1;
+}
+#lable_font2 {
+	position: absolute;
+	top: 0px;
+	left: 60px;
+	width: 60px;
+	height: auto;
+}
+#lable_font3_menu2 {
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	z-index: 8;
+	width: 500px;
+	height: auto;
+	box-shadow: 0px 0px 1px #010101;
+	/*opacity: 0.5;*/
+	display: none;/*关键：初始化盒子时，设置盒子无行为；解决了下拉菜单在一打开页面时就出现的情况*/
+}
+#lable_font3_menu2_bg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+	width: 500px;
+	height: 205px;
+}
+#lable_font3_menu2_font1 {
+	width: 500px;
+	height: auto;
+	font-family: 楷体;
+	font-size: 18px;
+	color: black;
+	opacity: 1;
+}
+#lable_font3 {
+	position: absolute;
+	top: 0px;
+	left: 120px;
+	width: 60px;
+}
+#lable_font4_menu3 {
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	z-index: 8;
+	width: 500px;
+	height: auto;
+	box-shadow: 0px 0px 1px #010101;
+	/*opacity: 0.5;*/
+	display: none;/*关键：初始化盒子时，设置盒子无行为；解决了下拉菜单在一打开页面时就出现的情况*/
+}
+#lable_font4_menu3_bg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+	width: 500px;
+	height: 205px;
+}
+#lable_font4_menu3_font1 {
+	width: 500px;
+	height: auto;
+	font-family: 楷体;
+	font-size: 18px;
+	color: black;
+	opacity: 1;
+}
+#lable_font4 {
+	position: absolute;
+	top: 0px;
+	left: 180px;
+	width: 80px;
+}
+#lable_font5_menu4 {
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	z-index: 8;
+	width: 500px;
+	height: auto;
+	box-shadow: 0px 0px 1px #010101;
+	/*opacity: 0.5;*/
+	display: none;/*关键：初始化盒子时，设置盒子无行为；解决了下拉菜单在一打开页面时就出现的情况*/
+}
+#lable_font5_menu4_bg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+	width: 500px;
+	height: 205px;
+}
+#lable_font5_menu4_font1 {
+	width: 500px;
+	height: auto;
+	font-family: 楷体;
+	font-size: 18px;
+	color: black;
+	opacity: 1;
+}
+#lable_font5 {
+	position: absolute;
+	top: 0px;
+	left: 260px;
+	width: 80px;
+}
+#lable_font6_menu5 {
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	z-index: 8;
+	width: 150px;
+	height: auto;
+	box-shadow: 0px 0px 1px #010101;
+	/*opacity: 0.5;*/
+	display: none;/*关键：初始化盒子时，设置盒子无行为；解决了下拉菜单在一打开页面时就出现的情况*/
+}
+#lable_font6_menu5_bg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+	width: 150px;
+	height: 123px;
+}
+#lable_font6_menu5_font1 {
+	position: absolute;
+	left: 8px;
+	width: 150px;
+	height: auto;
+	font-family: 楷体;
+	font-size: 18px;
+	color: black;
+	opacity: 1;
+}
+#lable_font6 {
+	position: absolute;
+	top: 0px;
+	left: 340px;
+	width: 80px;
+}
+#lable_font7_menu6 {
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	z-index: 8;
+	width: 150px;
+	height: auto;
+	box-shadow: 0px 0px 1px #010101;
+	/*opacity: 0.5;*/
+	display: none;/*关键：初始化盒子时，设置盒子无行为；解决了下拉菜单在一打开页面时就出现的情况*/
+}
+#lable_font7_menu6_bg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+	width: 150px;
+	height: 123px;
+}
+#lable_font7_menu6_font1 {
+	position: absolute;
+	left: 8px;
+	width: 150px;
+	height: auto;
+	font-family: 楷体;
+	font-size: 18px;
+	color: black;
+}
+#lable_font7 {
+	position: absolute;
+	top: 0px;
+	left: 420px;
+	width: 70px;
+}
+.lable_font2_menu1_font1 {
+	position: absolute;
+	top: 0px;
+	left: 23px;
+	z-index: 6;
+}
+.newtime {
+	float: right;
+	width: 80px;
+}
+.C_lable_font1 {
+	text-align: center;
+	color: #000000;
+}
+#music {
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	z-index: 7;
+	width: 310px;
+	height: 530px;
+	background-color: aliceblue;
+}
+#music_font1 {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	z-index: 10;
+	width: 280px;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 2px solid #7E7E7E;
+	text-indent: 5px;
+}
+#music_img {
+	position: absolute;
+	top: 55px;
+	left: 30px;
+	z-index: 7;
+	width: 260px;
+	height: 420px;
+	background-image: url(imgs/11.jpg);
+	background-size: 280px 420px;
+	border-bottom: 1px dashed #000000;
+	border-right: 1px dashed #000000;
+	border-left: 1px dashed #000000;
+}
+#music_m {
+	position: absolute;
+	width: 280px;
+	height: 100px;
+	top: 360px;
+	left: -10px;
+	overflow: hidden
+}
+#content {
+	position: absolute;
+	top: 40px;
+	left: 310px;
+	width: 740px;
+	height: 530px;
+	background-color: aliceblue;
+}
+#daily {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	width: 700px;
+	height: 190px;
+	background-color: aliceblue;
+	border: 1.5px dashed #D4D4D4;
+}
+#daily_lable1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 700px;
+	height: 30px;
+	background-color: #FF9AE8;/*日志浅粉色*/
+	background-image: url(imgs/label_font1.png);
+	opacity: 1;
+	border-bottom: 1.5px dashed #D4D4D4;
+	font-family: 黑体;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: left;
+}
+#daily_font {
+	position: absolute;
+	top: 35px;
+	left: 5px;
+	z-index: 7;
+	width: 694px;
+	opacity: 1;
+	background-color: aliceblue;
+	font-family: 黑体;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: left;
+}
+#photos {
+	position: absolute;
+	top: 210px;
+	right: 20px;
+	z-index: 8;
+	width: 700px;
+	height: 270px;
+	background-color: aliceblue;
+	border: 1.5px dashed #D4D4D4;
+}
+#photos_lable2 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 700px;
+	height: 30px;
+	background-color: #FF9AE8;/*日志浅粉色*/
+	background-image: url(imgs/label_font1.png);
+	opacity: 1;
+	border-bottom: 1.5px dashed #D4D4D4;
+	font-family: 黑体;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: left;
+}
+#photos_img {
+	position: absolute;
+	left: 0px;
+	top: 30px;
+	z-index: 5;
+	width: 700px;
+	height: 240px;
+	/*background-color:blue;*/
+	overflow: hidden;
+}
+#photos_img_move {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 7;
+	width: 680px;
+	height: 200px;
+	overflow: hidden;
+}
+#photos_img_move1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 10;
+	width: 140px;
+	height: 200px;
+	/*background-attachment:scroll;*/
+	/*background-color: aqua;*/
+	background-image: url(imgs/5.jpg);
+	box-shadow: 1px 10px 5px 0px black;
+}
+#photos_img_move2 {
+	position: absolute;
+	left: 150px;
+	top: 0px;
+	z-index: 10;
+	width: 140px;
+	height: 200px;
+	/*background-attachment:scroll;*/
+	background-color: aqua;
+	box-shadow: 1px 10px 5px 0px black;
+}
+#photos_img_move3 {
+	position: absolute;
+	left: 300px;
+	top: 0px;
+	z-index: 10;
+	width: 140px;
+	height: 200px;
+	/*background-attachment:scroll;*/
+	background-color: aqua;
+	box-shadow: 1px 10px 5px 0px black;
+}
+#photos_img_move4 {
+	position: absolute;
+	left: 450px;
+	top: 0px;
+	z-index: 10;
+	width: 140px;
+	height: 200px;
+	/*background-attachment:scroll;*/
+	background-color: aqua;
+	box-shadow: 1px 10px 5px 0px black;
+}
+#mar {/*marquee图片移动*/
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 200px;
+	width: 690px;
+}
+#bottom1 {
+	position: absolute;
+	top: 570px;
+	left: 0px;
+	z-index: 7;
+	width: 1050px;
+	height: 50px;
+	text-align: center;
+	font-family: 黑体;
+	background-color: aliceblue;
+	background-image: url(imgs/bottom_img2.png);
+}

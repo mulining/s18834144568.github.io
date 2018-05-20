@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>慕林宋的博客网站-2018-5-11</title>
+<style type="text/css"></style>
+<link href="CSS1.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	/*
+	整体思路：
+		定义变量；
+		获取接收的数据对象；
+		循环遍历每一个数据对象；
+		判断；
+		接收css样式；
+		启动display；
+		显示&隐藏；
+	*/
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;/*arguments类数组对象，接收传入进来的数据有多少，并将其以数组形式存放*/
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document)/*with()可以从脚本中对 HTML 页面中的所有元素进行访问*/
+	  /*问？：下面使用&&会不会出现短路问题？如果会出现短路问题，那么，obj将无法获得值，也就没有下文*/
+	  if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+		/*getElementById()可以得到这个标签的所有内容，包括其子标签等*/
+    if (obj.style) {
+		obj=obj.style;/*style就是css,目的是为了获取需要显示或者影藏盒子的样式*/
+		v=(v=='show')?'visible':(v=='hide')?'hidden':v;
+		/*
+		三元条件判断，从左往右判断，结构：条件判断？执行1：执行2；
+		判断v是否为真，如果为真执行1，否则执行2，执行2又是三元条件判断，继续重复，返回值为boolean类型；
+		*/
+	}
+	getElementById(args[i]).style.display="block";/*关键：设置该盒子行为为block；因为，在初始化页面时，盒子默认为无任何效果，在这里必须设置打开效果，才能让盒子产生显示效果；*/
+    obj.visibility=v; }/* 这里的V是Boolean类型的变量，true&false */
+}
+	</script>
+	<script type="text/javascript">
+	setInterval(show,10000);//每隔10秒改变一次
+	function show()
+	{
+		var number = Math.ceil(Math.random()*21);//有几张图片就乘以几
+		document.getElementById("radom_img").src="imgs/images/"+number+".png";//随机显示的话可以用随机函数来生成相应的图片名
+	}
+</script>
+</head>
+
+<body>
+<!--bgbody主体背景盒子-->
+<div id="bgbody"> 
+  <!--tital1为标题图片-->
+  <div id="tital1"></div>
+  <div id="bodys">
+    <div id="label">
+      <div id="label_img1"></div>
+      <div id="label_font"><a href="#">
+        <div class="C_lable_font1" id="lable_font1"><b>首页</b></div>
+        </a> <a href="#">
+        <div class="C_lable_font1" id="lable_font2"  onMouseOver="MM_showHideLayers('lable_font2_menu1','','show')" 
+		onMouseOut="MM_showHideLayers('lable_font2_menu1','','hide')"> <b>日志</b>
+          <div id="lable_font2_menu1" class="lable_font2_menu1">
+            <div id="lable_font2_menu1_bg" class="lable_font2_menu1_bg"></div>
+            <div id="lable_font2_menu1_font1" class="lable_font2_menu1_font1">
+              <ul>
+                <a href="#">
+                <li>PyCon China 2016 Invited Presenter</li>
+                </a> <a href="#">
+                <li>PyCon China 2015 Invited Presenter</li>
+                </a> <a href="#">
+                <li>Splunk Shanghai 2015 Hackweek - Third Prize</li>
+                </a> <a href="#">
+                <li>Splunk Shanghai 2014 Hackweek - Second Prize</li>
+                </a> <a href="#">
+                <li>查看更多...</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </a> <a href="#">
+        <div class="C_lable_font1" id="lable_font3" onMouseOver="MM_showHideLayers('lable_font3_menu2','','show')" onMouseOut="MM_showHideLayers('lable_font3_menu2','','hide')"><b>相册</b>
+          <div id="lable_font3_menu2" class="lable_font2_menu1">
+            <div id="lable_font3_menu2_bg" class="lable_font2_menu1_bg"></div>
+            <div id="lable_font3_menu2_font1" class="lable_font2_menu1_font1">
+              <ul>
+                <a href="#">
+                <li>生活纪实</li>
+                </a> <a href="#">
+                <li>社交</li>
+                </a> <a href="#">
+                <li>休闲</li>
+                </a> <a href="#">
+                <li>旅游</li>
+                </a> <a href="#">
+                <li>查看更多...</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </a> <a href="#">
+        <div class="C_lable_font1" id="lable_font4"
+			 onMouseOver="MM_showHideLayers('lable_font4_menu3','','show')" onMouseOut="MM_showHideLayers('lable_font4_menu3','','hide')"><b>影视欣赏</b>
+          <div id="lable_font4_menu3" class="lable_font2_menu1">
+            <div id="lable_font4_menu3_bg" class="lable_font2_menu1_bg"></div>
+            <div id="lable_font4_menu3_font1" class="lable_font2_menu1_font1">
+              <ul>
+                <a href="#">
+                <li>美国大片</li>
+                </a> <a href="#">
+                <li>热映影片</li>
+                </a> <a href="#">
+                <li>英文影视欣赏</li>
+                </a> <a href="#">
+                <li>北华大学影视欣赏</li>
+                </a> <a href="#">
+                <li>欣赏更多...</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </a> <a href="#">
+        <div class="C_lable_font1" id="lable_font5" onMouseOver="MM_showHideLayers('lable_font5_menu4','','show')" onMouseOut="MM_showHideLayers('lable_font5_menu4','','hide')"><b>乐曲欣赏</b>
+          <div id="lable_font5_menu4" class="lable_font2_menu1">
+            <div id="lable_font5_menu4_bg" class="lable_font2_menu1_bg"></div>
+            <div id="lable_font5_menu4_font1" class="lable_font2_menu1_font1">
+              <ul>
+                <a href="#">
+                <li>歌舞曲</li>
+                </a> <a href="#">
+                <li>抒情歌曲</li>
+                </a> <a href="#">
+                <li>小夜曲</li>
+                </a> <a href="#">
+                <li>非主流歌曲</li>
+                </a> <a href="#">
+                <li>听听更多</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </a> <a href="#">
+        <div class="C_lable_font1" id="lable_font6" onMouseOver="MM_showHideLayers('lable_font6_menu5','','show')" onMouseOut="MM_showHideLayers('lable_font6_menu5','','hide')"><b>留言板</b>
+          <div id="lable_font6_menu5" class="lable_font2_menu1">
+            <div id="lable_font6_menu5_bg" class="lable_font2_menu1_bg"></div>
+            <div id="lable_font6_menu5_font1" class="lable_font2_menu1_font1">
+              <ul>
+                <a href="#">
+                <li>网友留言</li>
+                </a> <a href="#">
+                <li>论坛发表</li>
+                </a> <a href="#">
+                <li>建议意见</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </a> <a href="#">
+        <div class="C_lable_font1" id="lable_font7" onMouseOver="MM_showHideLayers('lable_font7_menu6','','show')" onMouseOut="MM_showHideLayers('lable_font7_menu6','','hide')"><b>关于我</b>
+          <div id="lable_font7_menu6" class="lable_font2_menu1">
+            <div id="lable_font7_menu6_bg" class="lable_font2_menu1_bg"></div>
+            <div id="lable_font7_menu6_font1" class="lable_font2_menu1_font1">
+              <ul>
+                <a href="#">
+                <li>合作伙伴</li>
+                </a> <a href="#">
+                <li>联系电话</li>
+                </a> <a href="#">
+                <li>写信给我</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </a> </div>
+    </div>
+    <div id="music">
+      <div id="music_font1"><strong>>>关于我</strong></div>
+      <div id="music_img">
+		  <a href="#"><img id="radom_img" width="260" height="420" alt="MulinHome"></a>
+        <div id="music_m"> 
+          <!--<embed src="music/天空之城.mp3" width="280" height="65" align="center" vspace="10" autostart="true" loop="true">
+			</embed>--> 
+          <audio src="music/天空之城.mp3" controus  autoplay loop>浏览器不支持！</audio> 
+        </div>
+      </div>
+    </div>
+    <!--content为主要内容，daily为日志，使用无序列表，添加伪类;相册1-10任4张，图片实现滚动效果-->
+    <div id="content">
+      <div id="daily">
+        <div id="daily_lable1">&nbsp;<b>>>日志</b></div>
+        <div id="daily_font">
+          <ul>
+            <li><a href="#">&nbsp;>&nbsp;简报IMAX加长版《变形金刚》(亲历)<span class="newtime">2018-5-9</span></a></li>
+            <li><a href="#">&nbsp;>《变形金刚》发烧友的看图说话(多图)<span class="newtime">2018-5-8</span></a></li>
+            <li><a href="#">&nbsp;>《反恐王国》(The Kingdom):生猛的空心弹<span class="newtime">2018-5-6</span></a></li>
+            <li><a href="#">&nbsp;>《东方承诺》(Eastern primises):不动如山，暗流汹涌;<span class="newtime">2018-5-5</span></a></li>
+            <li><a href="#">&nbsp;>《妖精的旋律》(Elfen Lied):日式YY的经典案例<span class="newtime">2018-5-4</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="photos">
+        <div id="photos_lable2">&nbsp;<b>>>相册</b></div>
+        <div id="photos_img">
+          <marquee id="mar" onMouseOver="this.stop()" onMouseOut="this.start()" behavior="alternate">
+          <div id="photos_img_move">
+            <div id="photos_img_move1"><img src="imgs/5.jpg" width="140" height="200" alt="MulinHome"></div>
+            <div id="photos_img_move2"><img src="imgs/6.jpg" width="140" height="200" alt="MulinHome"></div>
+            <div id="photos_img_move3"><img src="imgs/8.jpg" width="140" height="200" alt="MulinHome"></div>
+            <div id="photos_img_move4"><img src="imgs/10.jpg" width="140" height="200" alt="MulinHome"></div>
+          </div>
+          </marquee>
+        </div>
+      </div>
+    </div>
+    <div id="bottom1"> @&nbsp;慕林之家 </div>
+  </div>
+</div>
+</body>
+</html>
